@@ -398,3 +398,52 @@ td.text-center {
 td.text-right {
   text-align: right;
 }
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .wrapper .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wrapper h1 {
+    font-size: 30px;
+  }
+  .wrapper p {
+    font-size: 18px;
+  }
+  .wrapper .text {
+    width: 100%;
+  }
+  .wrapper-img {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .wrapper {
+    padding: 60px 0;
+  }
+
+  .fabric-img {
+    height: 200px;
+    margin: 15px;
+    width: 42%;
+  }
+  .fabric .container {
+    width: 100%;
+  }
+  .fabric {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .menu {
+  display: none;
+  }
+  .footer .email {
+    font-size: 10px;
+  }
+}
