@@ -124,6 +124,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -134,7 +138,7 @@ body {
 }
 
 .header-top {
-  background: #f4f4f4;
+  background: #ebebeb;
 }
 
 .header-top-content {
@@ -155,6 +159,7 @@ body {
   padding-left: 15px;
   text-decoration: none;
   font-weight: 400;
+
 }
 .header-navbar {
   padding: 8px 0px;
@@ -399,6 +404,24 @@ td.text-right {
   text-align: right;
 }
 
+.mobile-menu {
+  display: none;
+  font-size: 20px;
+  position: fixed ;
+  top: 50px;
+  right: 0;
+  width: 80%;
+  height: 300px;
+  flex-direction: column;
+  background-color: rgb(230, 230, 230);
+  justify-content: space-around;
+
+  
+} 
+.mobile-menu-btn {
+  display: none;
+}
+
 @media screen and (max-width: 576px) {
   .container {
     width: 95%;
@@ -441,9 +464,24 @@ td.text-right {
     margin-bottom: 25px;
   }
   .menu {
-  display: none;
+    display: none;
   }
   .footer .email {
     font-size: 10px;
   }
+  .header-navbar .logo-img {
+    width: 70px;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .tel {
+    width: 50%;
+    text-align: end;
+  }
+  .header-top-content {
+    align-items: center;
+  }
+
 }
